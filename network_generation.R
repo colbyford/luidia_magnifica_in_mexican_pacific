@@ -11,7 +11,7 @@ metadata <- readr::read_csv("LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janes
 ## Make the Transmission Network
 graph <- makeTransNet(treedata,
                       metadata,
-                      columnSelection = "Body_of_Water",
+                      columnSelection = "Body_of_Water_formatted",
                       centralityMetric = 6,
                       treeType = "parsimonious")
 
@@ -28,7 +28,7 @@ metadata <- readr::read_csv("RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim
 ## Make the Transmission Network
 graph <- makeTransNet(treedata,
                       metadata,
-                      columnSelection = "Body_of_Water",
+                      columnSelection = "Body_of_Water_formatted",
                       centralityMetric = 6,
                       treeType = "parsimonious")
 graph
