@@ -1,0 +1,26 @@
+Metastates,Degree Centrality,Indegree Centrality,Outdegree Centrality,Betweenness Centrality,Closeness Centrality,Source Hub Ratio
+?,1,1,0,0,0.0121951219512195,0
+adjacent_water_of_Hanrim,1,1,0,0,0.0158730158730159,0
+Almirante_Bay,4,2,2,29,0.0169491525423729,0.5
+Balayan_Bay,1,1,0,0,0.0121951219512195,0
+Bohai_Sea,4,2,2,46,0.02,0.5
+Club_de_Yates,1,1,0,0,0.0121951219512195,0
+Coral_Sea,4,1,3,43.5,0.0196078431372549,0.75
+East_China_Sea,8,2,6,102,0.0238095238095238,0.75
+Gulf_of_Mexico,12,2,10,95.5,0.025,0.833333333333333
+Gulf_of_Thailand,4,1,3,24,0.0169491525423729,0.75
+Howe_Sound/Sunshine_Coast,2,1,1,0,0.0119047619047619,0.5
+Korea_Straight,1,1,0,0,0.0153846153846154,0
+Mozambique_Channel,1,1,0,0,0.0121951219512195,0
+North_Sea,2,1,1,0,0.0161290322580645,0.5
+Queen_Charlotte_Islands,1,1,0,0,0.0135135135135135,0
+Queen_Charlotte_Sound,3,2,1,8,0.0163934426229508,0.333333333333333
+San_Pedro_Shelf,1,1,0,0,0.0158730158730159,0
+Skagerrak_Straight,2,2,0,0,0.0161290322580645,0
+South_Atlantic_Ocean,1,1,0,0,0.0158730158730159,0
+South_China_Sea,3,2,1,7.5,0.0161290322580645,0.333333333333333
+South_Pacific_Ocean,3,2,1,9,0.0169491525423729,0.333333333333333
+South_San_Diego_Shelf,1,1,0,0,0.0158730158730159,0
+Tonkin_Gulf,2,2,0,0,0.0140845070422535,0
+Verde_Island_Passage,1,1,0,0,0.0153846153846154,0
+Yellow_Sea,4,1,3,24.5,0.0142857142857143,0.75
