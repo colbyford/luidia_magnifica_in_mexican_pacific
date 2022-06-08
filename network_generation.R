@@ -22,7 +22,7 @@ graph <- makeTransNet(treedata,
 saveRDS(graph, "graph1.rds")
 graph <- readRDS("graph1.rds")
 
-
+## Recolor Nodes and Edges
 palette_20 <- distinctColorPalette(20)
 
 nodes <- graph$x$nodes %>%
@@ -59,6 +59,7 @@ graph
 saveRDS(graph, "graph2.rds")
 graph <- readRDS("graph2.rds")
 
+## Recolor Nodes and Edges
 palette_25 <- distinctColorPalette(25)
 
 nodes <- graph$x$nodes %>%
