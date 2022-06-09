@@ -19,6 +19,7 @@ graph <- makeTransNet(treedata,
 
 # graph
 
+
 saveRDS(graph, "graph1.rds")
 graph <- readRDS("graph1.rds")
 
