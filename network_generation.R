@@ -4,10 +4,10 @@ library(visNetwork)
 library(dplyr)
 library(randomcoloR)
 
-### First Network
+### Galvan 16 0 54 Taxa
 ## Read in tree, metadata, and geodata
-treedata <- ape::read.tree("RAxML_bestTree.LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa.tre")
-metadata <- readr::read_csv("LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa16s.csv", col_names = TRUE)
+treedata <- ape::read.tree("Galvan_16S_54taxa/RAxML_bestTree.LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa.tre")
+metadata <- readr::read_csv("Galvan_16S_54taxa/LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa16s.csv", col_names = TRUE)
 
 
 ## Make the Transmission Network
@@ -20,8 +20,8 @@ graph <- makeTransNet(treedata,
 # graph
 
 
-saveRDS(graph, "graph1.rds")
-graph <- readRDS("graph1.rds")
+saveRDS(graph, "Galvan_16S_54taxa/graph.rds")
+graph <- readRDS("Galvan_16S_54taxa/graph.rds")
 
 ## Recolor Nodes and Edges
 palette_20 <- distinctColorPalette(20)
@@ -40,13 +40,13 @@ edges <- graph$x$edges %>%
 
 ## Generate the custom network using `visNetwork`
 visNetwork(nodes, edges) %>%
-  visOptions(nodesIdSelection = list(enabled = TRUE)) 
+  visOptions(nodesIdSelection = list(enabled = TRUE))
 
 ####################################
 ### Second Network
 ## Read in tree, metadata, and geodata
-treedata <- ape::read.tree("RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.tre")
-metadata <- readr::read_csv("RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.out_101.fix.csv", col_names = TRUE)
+treedata <- ape::read.tree("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.tre")
+metadata <- readr::read_csv("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.out_101.fix.csv", col_names = TRUE)
 
 
 ## Make the Transmission Network
@@ -57,8 +57,8 @@ graph <- makeTransNet(treedata,
                       treeType = "parsimonious")
 graph
 
-saveRDS(graph, "graph2.rds")
-graph <- readRDS("graph2.rds")
+saveRDS(graph, "Galvan_COI_101taxa/graph.rds")
+graph <- readRDS("Galvan_COI_101taxa/graph.rds")
 
 ## Recolor Nodes and Edges
 palette_25 <- distinctColorPalette(25)
@@ -77,4 +77,4 @@ edges <- graph$x$edges %>%
 
 ## Generate the custom network using `visNetwork`
 visNetwork(nodes, edges) %>%
-  visOptions(nodesIdSelection = list(enabled = TRUE)) 
+  visOptions(nodesIdSelection = list(enabled = TRUE))
