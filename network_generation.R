@@ -9,11 +9,17 @@ library(randomcoloR)
 treedata <- ape::read.tree("Galvan_16S_54taxa/RAxML_bestTree.LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa.tre")
 metadata <- readr::read_csv("Galvan_16S_54taxa/LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa16s.csv", col_names = TRUE)
 
+selected_meta = "Body_of_Water_formatted"
+ancestralStates = asr_max_parsimony(treedata,
+                                    as.numeric(as.factor(metadata[[selected_meta]])),
+                                    length(unique(metadata[[selected_meta]])))
+
+asr <- ancestralStates$ancestral_likelihoods %>% data.frame()
 
 ## Make the Transmission Network
 graph <- makeTransNet(treedata,
                       metadata,
-                      columnSelection = "Body_of_Water_formatted",
+                      columnSelection = selected_meta,
                       centralityMetric = 6,
                       treeType = "parsimonious")
 
