@@ -15,15 +15,17 @@ ancestralStates = asr_max_parsimony(treedata,
                                     length(unique(metadata[[selected_meta]])))
 
 
-ambig_threshold <- 1
+ambig_threshold = 1
 
-asr <- ancestralStates$ancestral_likelihoods %>% 
-  data.frame() %>% 
+asr <- ancestralStates$ancestral_likelihoods %>%
+  data.frame() %>%
   rowwise() %>%
-  mutate(ambig = ifelse(max(c_across(everything())) >= ambig_threshold, FALSE, TRUE)) %>% 
-  ungroup() %>% 
+  mutate(ambig = ifelse(max(c_across(everything())) >= ambig_threshold, FALSE, TRUE)) %>%
+  ungroup() %>%
   mutate(taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)])
-  
+
+colnames(asr) <- c(unique(metadata[[selected_meta]]), "ambig", "taxa")
+
 
 ## Make the Transmission Network
 graph <- makeTransNet(treedata,
