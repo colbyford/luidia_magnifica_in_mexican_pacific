@@ -15,42 +15,76 @@ ancestralStates = asr_max_parsimony(treedata,
                                     length(unique(metadata[[selected_meta]])))
 
 
-ambig_threshold = 1
-
 asr <- ancestralStates$ancestral_likelihoods %>%
   data.frame() %>%
-  rowwise() %>%
-  mutate(ambig = ifelse(max(c_across(everything())) >= ambig_threshold, FALSE, TRUE)) %>%
-  ungroup() %>%
-  mutate(taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)])
+  mutate(max_col_first = max.col(., ties.method = "first"),
+         max_col_last =  max.col(., ties.method = "last"),
+         ambig = ifelse(max_col_first == max_col_last, FALSE, TRUE),
+         taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]) %>% 
+  select(!c(max_col_first, max_col_last))
 
 colnames(asr) <- c(unique(metadata[[selected_meta]]), "ambig", "taxa")
 
 
+# non_ambig_taxa <- asr %>% filter(!ambig) %>% select(taxa) %>% .[["taxa"]]
+ambig_taxa <- asr %>% filter(ambig) %>% select(taxa) %>% .[["taxa"]]
+
+
+non_ambig_treedata <- treedata %>% ape::drop.tip(ambig_taxa)
+
+
 ## Make the Transmission Network
-graph <- makeTransNet(treedata,
-                      metadata,
-                      columnSelection = selected_meta,
-                      centralityMetric = 6,
-                      treeType = "parsimonious")
+full_graph <- makeTransNet(treedata,
+                           metadata,
+                           columnSelection = selected_meta,
+                           centralityMetric = 6,
+                           treeType = "parsimonious")
+
+
+non_ambig_graph <- makeTransNet(non_ambig_treedata,
+                                metadata,
+                                columnSelection = selected_meta,
+                                centralityMetric = 6,
+                                treeType = "parsimonious")
 
 # graph
 
 
-saveRDS(graph, "Galvan_16S_54taxa/graph.rds")
-graph <- readRDS("Galvan_16S_54taxa/graph.rds")
+saveRDS(full_graph, "Galvan_16S_54taxa/graph.rds")
+full_graph <- readRDS("Galvan_16S_54taxa/graph.rds")
+
+
+
+## Determine Ambiguous Edges
+non_ambig_df <- non_ambig_graph$x$edges %>% 
+  inner_join(non_ambig_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
+  inner_join(non_ambig_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
+  mutate(transmission = paste0(label,">", label_to))
+
+
+full_df <- full_graph$x$edges %>% 
+  inner_join(full_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
+  inner_join(full_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
+  mutate(transmission = paste0(label,">", label_to))
+
+ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
+
+
+full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
+
 
 ## Recolor Nodes and Edges
-palette_20 <- distinctColorPalette(20)
+color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
 
-nodes <- graph$x$nodes %>%
+nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
-         color = palette_20,
+         color = color_palette,
          font.size = 20)
 
-edges <- graph$x$edges %>%
+edges <- full_graph$x$edges %>%
   mutate(arrows = "to",
          smooth = TRUE,
+         dashes = full_df$ambig,
          color = ifelse(to == 5, "red", "grey"),
          width = value,
          value = NULL)
@@ -59,6 +93,31 @@ edges <- graph$x$edges %>%
 visNetwork(nodes, edges) %>%
   visOptions(nodesIdSelection = list(enabled = TRUE))
 
+
+## Recolor Nodes and Edges
+color_palette <- distinctColorPalette(nrow(non_ambig_graph$x$nodes))
+
+nodes <- non_ambig_graph$x$nodes %>%
+  mutate(shape = "dot",
+         color = color_palette,
+         font.size = 20)
+
+edges <- non_ambig_graph$x$edges %>%
+  mutate(arrows = "to",
+         smooth = TRUE,
+         # dashes = full_df$ambig,
+         color = ifelse(to == 5, "red", "grey"),
+         width = value,
+         value = NULL)
+
+## Generate the custom network using `visNetwork`
+visNetwork(nodes, edges) %>%
+  visOptions(nodesIdSelection = list(enabled = TRUE))
+
+
+
+
+
 ####################################
 ### Second Network
 ## Read in tree, metadata, and geodata
@@ -66,28 +125,100 @@ treedata <- ape::read.tree("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_
 metadata <- readr::read_csv("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.out_101.fix.csv", col_names = TRUE)
 
 
-## Make the Transmission Network
-graph <- makeTransNet(treedata,
-                      metadata,
-                      columnSelection = "Body_of_Water_formatted",
-                      centralityMetric = 6,
-                      treeType = "parsimonious")
-graph
+selected_meta = "Body_of_Water_formatted"
+ancestralStates = asr_max_parsimony(treedata,
+                                    as.numeric(as.factor(metadata[[selected_meta]])),
+                                    length(unique(metadata[[selected_meta]])))
 
-saveRDS(graph, "Galvan_COI_101taxa/graph.rds")
-graph <- readRDS("Galvan_COI_101taxa/graph.rds")
+
+asr <- ancestralStates$ancestral_likelihoods %>%
+  data.frame() %>%
+  mutate(max_col_first = max.col(., ties.method = "first"),
+         max_col_last =  max.col(., ties.method = "last"),
+         ambig = ifelse(max_col_first == max_col_last, FALSE, TRUE),
+         taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]) %>% 
+  select(!c(max_col_first, max_col_last))
+
+colnames(asr) <- c(unique(metadata[[selected_meta]]), "ambig", "taxa")
+
+
+# non_ambig_taxa <- asr %>% filter(!ambig) %>% select(taxa) %>% .[["taxa"]]
+ambig_taxa <- asr %>% filter(ambig) %>% select(taxa) %>% .[["taxa"]]
+
+
+non_ambig_treedata <- treedata %>% ape::drop.tip(ambig_taxa)
+
+
+## Make the Transmission Network
+full_graph <- makeTransNet(treedata,
+                           metadata,
+                           columnSelection = selected_meta,
+                           centralityMetric = 6,
+                           treeType = "parsimonious")
+
+
+non_ambig_graph <- makeTransNet(non_ambig_treedata,
+                                metadata,
+                                columnSelection = selected_meta,
+                                centralityMetric = 6,
+                                treeType = "parsimonious")
+
+# graph
+
+saveRDS(full_graph, "Galvan_COI_101taxa/graph.rds")
+full_graph <- readRDS("Galvan_COI_101taxa/graph.rds")
+
+## Determine Ambiguous Edges
+non_ambig_df <- non_ambig_graph$x$edges %>% 
+  inner_join(non_ambig_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
+  inner_join(non_ambig_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
+  mutate(transmission = paste0(label,">", label_to))
+
+
+full_df <- full_graph$x$edges %>% 
+  inner_join(full_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
+  inner_join(full_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
+  mutate(transmission = paste0(label,">", label_to))
+
+ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
+
+
+full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
+
 
 ## Recolor Nodes and Edges
-palette_25 <- distinctColorPalette(25)
+color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
 
-nodes <- graph$x$nodes %>%
+nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
-         color = palette_25,
+         color = color_palette,
          font.size = 20)
 
-edges <- graph$x$edges %>%
+edges <- full_graph$x$edges %>%
   mutate(arrows = "to",
          smooth = TRUE,
+         dashes = full_df$ambig,
+         color = ifelse(to == 6, "red", "grey"),
+         width = value,
+         value = NULL)
+
+## Generate the custom network using `visNetwork`
+visNetwork(nodes, edges) %>%
+  visOptions(nodesIdSelection = list(enabled = TRUE))
+
+
+## Recolor Nodes and Edges
+color_palette <- distinctColorPalette(nrow(non_ambig_graph$x$nodes))
+
+nodes <- non_ambig_graph$x$nodes %>%
+  mutate(shape = "dot",
+         color = color_palette,
+         font.size = 20)
+
+edges <- non_ambig_graph$x$edges %>%
+  mutate(arrows = "to",
+         smooth = TRUE,
+         # dashes = full_df$ambig,
          color = ifelse(to == 6, "red", "grey"),
          width = value,
          value = NULL)
