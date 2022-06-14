@@ -4,7 +4,7 @@ library(visNetwork)
 library(dplyr)
 library(randomcoloR)
 
-### Galvan 16 0 54 Taxa
+### Galvan 16 - 54 Taxa
 ## Read in tree, metadata, and geodata
 treedata <- ape::read.tree("Galvan_16S_54taxa/RAxML_bestTree.LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa.tre")
 metadata <- readr::read_csv("Galvan_16S_54taxa/LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa16s.csv", col_names = TRUE)
