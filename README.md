@@ -1,1 +1,3 @@
-# janies_invasive_starfish_network
+# Invasive Starfish Network
+
+<h3 align="right">Janies, et al.</h3>
