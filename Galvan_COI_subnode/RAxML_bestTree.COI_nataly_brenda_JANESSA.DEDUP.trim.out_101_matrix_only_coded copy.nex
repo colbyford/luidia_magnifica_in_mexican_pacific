@@ -1,0 +1,577 @@
+#NEXUS
+[written Wed Jun 08 16:39:41 EDT 2022 by Mesquite  version 3.70 (build 940) at CCI3G2P3YVALT/10.16.54.208]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=101;
+	TAXLABELS
+		KT271549_1_Eleutherozoa_sp_COT022_L218 KT271545_1_Eleutherozoa_sp_COT005_L39 JQ740634_1_Luidia_maculata_voucher_MBM_E00M1 JQ740635_1_Luidia_maculata_voucher_MBM_E00M2 MT444499_1_Luidia_maculata_voucher_SS_0354 Luidia_maculata_CAS202422 Luidia_savignyi_USNM53668 Luidia_savignyi_USNM40467 Luidia_sibogae_CAS184021 Luidia_maculata_IE_2007_1023 MN730743_1_Asteroidea_sp_RCMBAR2223 MN730700_1_Asteroidea_sp_RCMBAR088 Luidia_magnifica_COIce_Karen Luidia_magnifica_IE_2013_1762 Luidia_magnifica_IE_2013_1757 MN730685_1_Asteroidea_sp_RCMBAR224 MN730689_1_Asteroidea_sp_RCMBAR2024 MN730752_1_Asteroidea_sp_RCMBAR2352 MN730674_1_Asteroidea_sp_RCMBAR2027 MN730736_1_Asteroidea_sp_RCMBAR1265 FWRI_I_00035_Luidia_alternata FWRI_I_00036_Luidia_alternata Luidia_ludwigi_scotti_IE_2013_6486 Luidia_ludwigi_scotti_IE_2013_6497 FWRI_I_00013_Luidia_ludwigi_scotti FWRI_I_00014_Luidia_ludwigi_scotti DISA373_18_Luidia_armata HM473922_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24124 HM542255_1_Luidia_foliolata_voucher_NEOCAL07_0112 HM542256_1_Luidia_foliolata_voucher_NEOCAL07_0113 HM542259_1_Luidia_foliolata_voucher_NEOCAL07_0121 HM542258_1_Luidia_foliolata_voucher_NEOCAL07_0115 HM473927_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24195 HM542257_1_Luidia_foliolata_voucher_NEOCAL07_0114 HM473926_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24194 HM473923_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23991 HM473924_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23992 HM473921_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24123 HM473925_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23993 FWRI_I_00149_128086_Luidia_barbadensis_COI Luidia_barbadensis_481 FSBC_I_133245_Luidia_barbadensis FWRI_I_00021_Luidia_lawrencei FWRI_I_00027_Luidia_lawrencei FWRI_I_00026_Luidia_lawrencei MN730764_1_Asteroidea_sp_RCMBAR580 MN730669_1_Asteroidea_sp_RCMBAR1006 FWRI_I_00034_Luidia_clathrata FWRI_I_00030_Luidia_clathrata MN730728_1_Asteroidea_sp_RCMBAR1003 FWRI_I_00018_Luidia_senegalensis MN730776_1_Asteroidea_sp_RCMBAR2351 MN730704_1_Asteroidea_sp_RCMBAR687 KX458990_1_Luidia_sarsi_voucher_MT00181 KX458992_1_Luidia_sarsi_voucher_MT06511 KX458998_1_Luidia_sarsi_voucher_MT06512 KX458995_1_Luidia_sarsi_voucher_MT06515 KX458997_1_Luidia_sarsi_voucher_MT00182 KX458993_1_Luidia_sarsi_voucher_MT03585 KX458996_1_Luidia_sarsi_voucher_MT00184 KX459002_1_Luidia_sarsi_voucher_MT03588 KX458991_1_Luidia_sarsi_voucher_MT03587 KX458989_1_Luidia_sarsi_voucher_MT06514 KX459001_1_Luidia_sarsi_voucher_MT06513 MG935400_1_Luidia_sarsi_voucher_Echin_6334V KX458999_1_Luidia_sarsi_voucher_MT00183 KX458994_1_Luidia_sarsi_voucher_MT03586 KX459000_1_Luidia_sarsi_voucher_MT00180 KX459003_1_Luidia_sarsi_voucher_MT03584 DISA072_18_Luidia_asthenosoma FWRI_I_00146_131848_Luidia_sagamina_aciculata_COI FWRI_I_00144_69376_Luidia_sagamina_aciculata_COI FWRI_I_00142_122548_Luidia_sagamina_aciculata_COI MG940977_Luidia_sagamina_sagamina MG935115_1_Luidia_ciliaris_voucher_Echin_6671V MG934990_1_Luidia_ciliaris_voucher_Echin_6670V JQ740614_1_Luidia_quinaria_voucher_MBM_E00Q3 JQ740626_1_Luidia_orientalis_voucher_MBM_E00O3 JQ740631_1_Luidia_longispina_voucher_MBM_E00L3 JQ740628_1_Luidia_avicularia_voucher_MBM_E00A3 JQ740625_1_Luidia_orientalis_voucher_MBM_E00O2 JQ740620_1_Luidia_yesoensis_voucher_MBM_E00Y3 JQ740623_1_Luidia_changi_voucher_MBM_E00C3 JQ740624_1_Luidia_orientalis_voucher_MBM_E00O1 KY305010_1_Luidia_avicularia_isolate_LA1125 JQ740612_1_Luidia_quinaria_voucher_MBM_E00Q1 JQ740615_1_Luidia_quinaria_voucher_MBM_E00Q4 JQ740617_1_Luidia_quinaria_voucher_MBM_E00Q6 JQ740616_1_Luidia_quinaria_voucher_MBM_E00Q5 JQ740619_1_Luidia_yesoensis_voucher_MBM_E00Y2 JQ740618_1_Luidia_yesoensis_voucher_MBM_E00Y1 JQ740613_1_Luidia_quinaria_voucher_MBM_E00Q2 JQ740622_1_Luidia_changi_voucher_MBM_E00C2 JQ740632_1_Luidia_hardwicki_voucher_MBM_E00H1 JQ740630_1_Luidia_longispina_voucher_MBM_E00L2 Lidia_avicularia_IE_2013_6763 Luidia_avicularia_IE_2013_6767 Luidia_avicularia_IE_2013_6766 HM400306_Dipsacaster_borealis_voucher_RBCM_EC00025 UF17286 UF17309 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=4;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S";
+	CHARSTATELABELS 
+		1 Country /  Australia Brazil Canada Chile China French_Polynesian Japan Madagascar Mexico Panama Philippines Singapore South_Korea Sweden Tonga USA Thailand,
+		2 Region /  Alabama 'Austral Islands: Neilson Reef' 'Austral Islands: Northeast Rapa Bench' Batangas Bocas_Del_Toro Box_C British_Columbia California Colima East_China Eastern_Australia Florida Great_Barrier_Reef Jeju_Island Mahajamba_Bay_coast Ohonua Okinawa Papudo Rio_de_Janeiro Station_270 Station_274 Ko_Man_Klang Chon_Buri,
+		3 Body_of_Water /  adjacent_water_of_Hanrim Almirante_Bay Balayan_Bay Bohai_Sea Club_de_Yates Coral_Sea East_China_Sea Gulf_of_Mexico 'Howe Sound/Sunshine Coast' Korea_Straight Mozambique_Channel North_Sea Queen_Charlotte_Islands Queen_Charlotte_Sound San_Pedro_Shelf Skagerrak_Straight South_Atlantic_Ocean South_China_Sea South_Pacific_Ocean South_San_Diego_Shelf Southeast_Pacific_Ocean Tonkin_Gulf Verde_Island_Passage Yellow_Sea Gulf_of_Thailand North_Pacific_Ocean,
+		4 Larva_or_Adult /  larva adult ; 
+	MATRIX
+	KT271549_1_Eleutherozoa_sp_COT022_L218                   0C50
+	KT271545_1_Eleutherozoa_sp_COT005_L39                    0C50
+	JQ740634_1_Luidia_maculata_voucher_MBM_E00M1             496?
+	JQ740635_1_Luidia_maculata_voucher_MBM_E00M2             496?
+	MT444499_1_Luidia_maculata_voucher_SS_0354               B??1
+	Luidia_maculata_CAS202422                                A321
+	Luidia_savignyi_USNM53668                                6GS1
+	Luidia_savignyi_USNM40467                                6GS1
+	Luidia_sibogae_CAS184021                                 A3P1
+	Luidia_maculata_IE_2007_1023                             7EA1
+	MN730743_1_Asteroidea_sp_RCMBAR2223                      9410
+	MN730700_1_Asteroidea_sp_RCMBAR088                       9410
+	Luidia_magnifica_COIce_Karen                             8841
+	Luidia_magnifica_IE_2013_1762                            51J1
+	Luidia_magnifica_IE_2013_1757                            52J1
+	MN730685_1_Asteroidea_sp_RCMBAR224                       9410
+	MN730689_1_Asteroidea_sp_RCMBAR2024                      9410
+	MN730752_1_Asteroidea_sp_RCMBAR2352                      9410
+	MN730674_1_Asteroidea_sp_RCMBAR2027                      9410
+	MN730736_1_Asteroidea_sp_RCMBAR1265                      9410
+	FWRI_I_00035_Luidia_alternata                            FB71
+	FWRI_I_00036_Luidia_alternata                            FB71
+	Luidia_ludwigi_scotti_IE_2013_6486                       1JG1
+	Luidia_ludwigi_scotti_IE_2013_6497                       1JG1
+	FWRI_I_00013_Luidia_ludwigi_scotti                       FB71
+	FWRI_I_00014_Luidia_ludwigi_scotti                       FB71
+	DISA373_18_Luidia_armata                                 F7E1
+	HM473922_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24124  26D?
+	HM542255_1_Luidia_foliolata_voucher_NEOCAL07_0112        2681
+	HM542256_1_Luidia_foliolata_voucher_NEOCAL07_0113        2681
+	HM542259_1_Luidia_foliolata_voucher_NEOCAL07_0121        2681
+	HM542258_1_Luidia_foliolata_voucher_NEOCAL07_0115        2681
+	HM473927_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24195  26D?
+	HM542257_1_Luidia_foliolata_voucher_NEOCAL07_0114        2681
+	HM473926_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24194    26D?
+	HM473923_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23991  26D?
+	HM473924_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23992  26D?
+	HM473921_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24123  26D?
+	HM473925_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23993  26D?
+	FWRI_I_00149_128086_Luidia_barbadensis_COI               FB71
+	Luidia_barbadensis_481                                   FB71
+	FSBC_I_133245_Luidia_barbadensis                         FB71
+	FWRI_I_00021_Luidia_lawrencei                            FB71
+	FWRI_I_00027_Luidia_lawrencei                            FB71
+	FWRI_I_00026_Luidia_lawrencei                            FB71
+	MN730764_1_Asteroidea_sp_RCMBAR580                       9410
+	MN730669_1_Asteroidea_sp_RCMBAR1006                      9410
+	FWRI_I_00034_Luidia_clathrata                            F071
+	FWRI_I_00030_Luidia_clathrata                            FB71
+	MN730728_1_Asteroidea_sp_RCMBAR1003                      9410
+	FWRI_I_00018_Luidia_senegalensis                         FB71
+	MN730776_1_Asteroidea_sp_RCMBAR2351                      9410
+	MN730704_1_Asteroidea_sp_RCMBAR687                       9410
+	KX458990_1_Luidia_sarsi_voucher_MT00181                  ?5B1
+	KX458992_1_Luidia_sarsi_voucher_MT06511                  ?KB1
+	KX458998_1_Luidia_sarsi_voucher_MT06512                  ?KB1
+	KX458995_1_Luidia_sarsi_voucher_MT06515                  ?KB1
+	KX458997_1_Luidia_sarsi_voucher_MT00182                  ?5B1
+	KX458993_1_Luidia_sarsi_voucher_MT03585                  ?MB1
+	KX458996_1_Luidia_sarsi_voucher_MT00184                  ?5B1
+	KX459002_1_Luidia_sarsi_voucher_MT03588                  ?MB1
+	KX458991_1_Luidia_sarsi_voucher_MT03587                  ?MB1
+	KX458989_1_Luidia_sarsi_voucher_MT06514                  ?KB1
+	KX459001_1_Luidia_sarsi_voucher_MT06513                  ?KB1
+	MG935400_1_Luidia_sarsi_voucher_Echin_6334V              D?F1
+	KX458999_1_Luidia_sarsi_voucher_MT00183                  ?5B1
+	KX458994_1_Luidia_sarsi_voucher_MT03586                  ?MB1
+	KX459000_1_Luidia_sarsi_voucher_MT00180                  ?5B1
+	KX459003_1_Luidia_sarsi_voucher_MT03584                  ?MB1
+	DISA072_18_Luidia_asthenosoma                            F7K1
+	FWRI_I_00146_131848_Luidia_sagamina_aciculata_COI        FB71
+	FWRI_I_00144_69376_Luidia_sagamina_aciculata_COI         FB71
+	FWRI_I_00142_122548_Luidia_sagamina_aciculata_COI        FB71
+	MG940977_Luidia_sagamina_sagamina                        CD0?
+	MG935115_1_Luidia_ciliaris_voucher_Echin_6671V           D?F1
+	MG934990_1_Luidia_ciliaris_voucher_Echin_6670V           D?F1
+	JQ740614_1_Luidia_quinaria_voucher_MBM_E00Q3             4?Q1
+	JQ740626_1_Luidia_orientalis_voucher_MBM_E00O3           4?H1
+	JQ740631_1_Luidia_longispina_voucher_MBM_E00L3           4?N1
+	JQ740628_1_Luidia_avicularia_voucher_MBM_E00A3           4?H1
+	JQ740625_1_Luidia_orientalis_voucher_MBM_E00O2           4?H1
+	JQ740620_1_Luidia_yesoensis_voucher_MBM_E00Y3            4?31
+	JQ740623_1_Luidia_changi_voucher_MBM_E00C3               4?Q1
+	JQ740624_1_Luidia_orientalis_voucher_MBM_E00O1           4?H1
+	KY305010_1_Luidia_avicularia_isolate_LA1125              C?91
+	JQ740612_1_Luidia_quinaria_voucher_MBM_E00Q1             4?Q1
+	JQ740615_1_Luidia_quinaria_voucher_MBM_E00Q4             4?Q1
+	JQ740617_1_Luidia_quinaria_voucher_MBM_E00Q6             4?Q1
+	JQ740616_1_Luidia_quinaria_voucher_MBM_E00Q5             4?Q1
+	JQ740619_1_Luidia_yesoensis_voucher_MBM_E00Y2            4?31
+	JQ740618_1_Luidia_yesoensis_voucher_MBM_E00Y1            4?31
+	JQ740613_1_Luidia_quinaria_voucher_MBM_E00Q2             4?Q1
+	JQ740622_1_Luidia_changi_voucher_MBM_E00C2               4?Q1
+	JQ740632_1_Luidia_hardwicki_voucher_MBM_E00H1            4?61
+	JQ740630_1_Luidia_longispina_voucher_MBM_E00L2           4?N1
+	Lidia_avicularia_IE_2013_6763                            EFJ1
+	Luidia_avicularia_IE_2013_6767                           0A51
+	Luidia_avicularia_IE_2013_6766                           0A51
+	HM400306_Dipsacaster_borealis_voucher_RBCM_EC00025       26C1
+	UF17286                                                  GNR1
+	UF17309                                                  GPR1
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 4;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 4;
+END;
+
+BEGIN TREES;
+	Title Imported_trees;
+	ID 0181404305121;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 KT271549_1_Eleutherozoa_sp_COT022_L218,
+[1] 		2 KT271545_1_Eleutherozoa_sp_COT005_L39,
+[2] 		3 JQ740634_1_Luidia_maculata_voucher_MBM_E00M1,
+[3] 		4 JQ740635_1_Luidia_maculata_voucher_MBM_E00M2,
+[4] 		5 MT444499_1_Luidia_maculata_voucher_SS_0354,
+[5] 		6 Luidia_maculata_CAS202422,
+[6] 		7 Luidia_savignyi_USNM53668,
+[7] 		8 Luidia_savignyi_USNM40467,
+[8] 		9 Luidia_sibogae_CAS184021,
+[9] 		10 Luidia_maculata_IE_2007_1023,
+[10] 		11 MN730743_1_Asteroidea_sp_RCMBAR2223,
+[11] 		12 MN730700_1_Asteroidea_sp_RCMBAR088,
+[12] 		13 Luidia_magnifica_COIce_Karen,
+[13] 		14 Luidia_magnifica_IE_2013_1762,
+[14] 		15 Luidia_magnifica_IE_2013_1757,
+[15] 		16 MN730685_1_Asteroidea_sp_RCMBAR224,
+[16] 		17 MN730689_1_Asteroidea_sp_RCMBAR2024,
+[17] 		18 MN730752_1_Asteroidea_sp_RCMBAR2352,
+[18] 		19 MN730674_1_Asteroidea_sp_RCMBAR2027,
+[19] 		20 MN730736_1_Asteroidea_sp_RCMBAR1265,
+[20] 		21 FWRI_I_00035_Luidia_alternata,
+[21] 		22 FWRI_I_00036_Luidia_alternata,
+[22] 		23 Luidia_ludwigi_scotti_IE_2013_6486,
+[23] 		24 Luidia_ludwigi_scotti_IE_2013_6497,
+[24] 		25 FWRI_I_00013_Luidia_ludwigi_scotti,
+[25] 		26 FWRI_I_00014_Luidia_ludwigi_scotti,
+[26] 		27 DISA373_18_Luidia_armata,
+[27] 		28 HM473922_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24124,
+[28] 		29 HM542255_1_Luidia_foliolata_voucher_NEOCAL07_0112,
+[29] 		30 HM542256_1_Luidia_foliolata_voucher_NEOCAL07_0113,
+[30] 		31 HM542259_1_Luidia_foliolata_voucher_NEOCAL07_0121,
+[31] 		32 HM542258_1_Luidia_foliolata_voucher_NEOCAL07_0115,
+[32] 		33 HM473927_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24195,
+[33] 		34 HM542257_1_Luidia_foliolata_voucher_NEOCAL07_0114,
+[34] 		35 HM473926_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24194,
+[35] 		36 HM473923_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23991,
+[36] 		37 HM473924_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23992,
+[37] 		38 HM473921_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_24123,
+[38] 		39 HM473925_1_Luidia_foliolata_voucher_BIOUG_CAN_HLC_23993,
+[39] 		40 FWRI_I_00149_128086_Luidia_barbadensis_COI,
+[40] 		41 Luidia_barbadensis_481,
+[41] 		42 FSBC_I_133245_Luidia_barbadensis,
+[42] 		43 FWRI_I_00021_Luidia_lawrencei,
+[43] 		44 FWRI_I_00027_Luidia_lawrencei,
+[44] 		45 FWRI_I_00026_Luidia_lawrencei,
+[45] 		46 MN730764_1_Asteroidea_sp_RCMBAR580,
+[46] 		47 MN730669_1_Asteroidea_sp_RCMBAR1006,
+[47] 		48 FWRI_I_00034_Luidia_clathrata,
+[48] 		49 FWRI_I_00030_Luidia_clathrata,
+[49] 		50 MN730728_1_Asteroidea_sp_RCMBAR1003,
+[50] 		51 FWRI_I_00018_Luidia_senegalensis,
+[51] 		52 MN730776_1_Asteroidea_sp_RCMBAR2351,
+[52] 		53 MN730704_1_Asteroidea_sp_RCMBAR687,
+[53] 		54 KX458990_1_Luidia_sarsi_voucher_MT00181,
+[54] 		55 KX458992_1_Luidia_sarsi_voucher_MT06511,
+[55] 		56 KX458998_1_Luidia_sarsi_voucher_MT06512,
+[56] 		57 KX458995_1_Luidia_sarsi_voucher_MT06515,
+[57] 		58 KX458997_1_Luidia_sarsi_voucher_MT00182,
+[58] 		59 KX458993_1_Luidia_sarsi_voucher_MT03585,
+[59] 		60 KX458996_1_Luidia_sarsi_voucher_MT00184,
+[60] 		61 KX459002_1_Luidia_sarsi_voucher_MT03588,
+[61] 		62 KX458991_1_Luidia_sarsi_voucher_MT03587,
+[62] 		63 KX458989_1_Luidia_sarsi_voucher_MT06514,
+[63] 		64 KX459001_1_Luidia_sarsi_voucher_MT06513,
+[64] 		65 MG935400_1_Luidia_sarsi_voucher_Echin_6334V,
+[65] 		66 KX458999_1_Luidia_sarsi_voucher_MT00183,
+[66] 		67 KX458994_1_Luidia_sarsi_voucher_MT03586,
+[67] 		68 KX459000_1_Luidia_sarsi_voucher_MT00180,
+[68] 		69 KX459003_1_Luidia_sarsi_voucher_MT03584,
+[69] 		70 DISA072_18_Luidia_asthenosoma,
+[70] 		71 FWRI_I_00146_131848_Luidia_sagamina_aciculata_COI,
+[71] 		72 FWRI_I_00144_69376_Luidia_sagamina_aciculata_COI,
+[72] 		73 FWRI_I_00142_122548_Luidia_sagamina_aciculata_COI,
+[73] 		74 MG940977_Luidia_sagamina_sagamina,
+[74] 		75 MG935115_1_Luidia_ciliaris_voucher_Echin_6671V,
+[75] 		76 MG934990_1_Luidia_ciliaris_voucher_Echin_6670V,
+[76] 		77 JQ740614_1_Luidia_quinaria_voucher_MBM_E00Q3,
+[77] 		78 JQ740626_1_Luidia_orientalis_voucher_MBM_E00O3,
+[78] 		79 JQ740631_1_Luidia_longispina_voucher_MBM_E00L3,
+[79] 		80 JQ740628_1_Luidia_avicularia_voucher_MBM_E00A3,
+[80] 		81 JQ740625_1_Luidia_orientalis_voucher_MBM_E00O2,
+[81] 		82 JQ740620_1_Luidia_yesoensis_voucher_MBM_E00Y3,
+[82] 		83 JQ740623_1_Luidia_changi_voucher_MBM_E00C3,
+[83] 		84 JQ740624_1_Luidia_orientalis_voucher_MBM_E00O1,
+[84] 		85 KY305010_1_Luidia_avicularia_isolate_LA1125,
+[85] 		86 JQ740612_1_Luidia_quinaria_voucher_MBM_E00Q1,
+[86] 		87 JQ740615_1_Luidia_quinaria_voucher_MBM_E00Q4,
+[87] 		88 JQ740617_1_Luidia_quinaria_voucher_MBM_E00Q6,
+[88] 		89 JQ740616_1_Luidia_quinaria_voucher_MBM_E00Q5,
+[89] 		90 JQ740619_1_Luidia_yesoensis_voucher_MBM_E00Y2,
+[90] 		91 JQ740618_1_Luidia_yesoensis_voucher_MBM_E00Y1,
+[91] 		92 JQ740613_1_Luidia_quinaria_voucher_MBM_E00Q2,
+[92] 		93 JQ740622_1_Luidia_changi_voucher_MBM_E00C2,
+[93] 		94 JQ740632_1_Luidia_hardwicki_voucher_MBM_E00H1,
+[94] 		95 JQ740630_1_Luidia_longispina_voucher_MBM_E00L2,
+[95] 		96 Lidia_avicularia_IE_2013_6763,
+[96] 		97 Luidia_avicularia_IE_2013_6767,
+[97] 		98 Luidia_avicularia_IE_2013_6766,
+[98] 		99 HM400306_Dipsacaster_borealis_voucher_RBCM_EC00025,
+[99] 		100 UF17286,
+[100] 		101 UF17309;
+	TREE Imported_tree_1 = (((((((48:0.001104320705368642,49:0.00000100000050002909):0.06820400532496466,((45:0.005887165267864318,(44:0.00000100000050002909,43:0.00000100000050002909):0.0023797235649920126):0.03246625152713581,(46:0.00000100000050002909,47:0.00000100000050002909):0.06921922411750146):0.04302536442394689):0.04645384753498975,(53:0.00000100000050002909,(52:0.005664140828487139,(50:0.00000100000050002909,51:0.00000100000050002909):0.00000100000050002909):0.0014311388654752511):0.07123821603636882):0.024543200163019457,((((40:0.0010921948431028231,41:0.00000100000050002909):0.029340770883519388,42:0.03912786622597022):0.058097659119637955,(((22:0.00000100000050002909,21:0.00000100000050002909):0.04590404239523,((19:0.00000100000050002909,20:0.00000100000050002909):0.0007354123314521669,((17:0.00000100000050002909,16:0.00000100000050002909):0.00000100000050002909,18:0.00000100000050002909):0.0013681407530817518):0.032984141425375896):0.12974331473446965,(39:0.00000100000050002909,((((35:0.00000100000050002909,37:0.0021778548069032993):0.00000100000050002909,36:0.00000100000050002909):0.00000100000050002909,38:0.00000100000050002909):0.00000100000050002909,(((31:0.00000100000050002909,32:0.00000100000050002909):0.00000100000050002909,(29:0.00000100000050002909,(30:0.00000100000050002909,28:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909):0.001795425613077185,(34:0.004532605456510385,33:0.004370595044192345):0.00000100000050002909):0.0017975092600993258):0.0026990260658260505):0.13103773212274095):0.03805434860981919):0.002479962229582104,(((((1:0.00000100000050002909,2:0.001120875999502912):0.0489615293878665,((3:0.0011156302265219612,4:0.00000100000050002909):0.02872316757517052,((101:0.000905942068351015,5:0.0009475747240763669):0.007057519285769897,6:0.003959461455404749):0.019087617363139617):0.006847344574037411):0.059114889133114724,((9:0.002230423363376632,(7:0.0011147585818851776,8:0.00000100000050002909):0.00000100000050002909):0.06461955043885476,(10:0.046218514409565335,100:0.04503652968689308):0.013178106619504033):0.014875118704015117):0.045539730665627734,(15:0.0010906480068403003,(14:0.0011634842240858321,(13:0.012098060300883003,(12:0.00000100000050002909,11:0.00000100000050002909):0.004502619484407631):0.003296141038838347):0.001171152429885615):0.07860086400896484):0.026618226210415263,(27:0.06606501995099436,((25:0.001108470903967968,26:0.0011561297782425773):0.005158520715851081,(23:0.00000100000050002909,24:0.00000100000050002909):0.01681307730641538):0.03655931771758929):0.04289331323729724):0.00910465201382835):0.02240463024844225):0.02738161953113644,(((82:0.001088822116741827,((((78:0.0021813324565709744,77:0.0010878753890238549):0.00000100000050002909,(79:0.0021973540785864437,(89:0.0010952747211602249,((88:0.00000100000050002909,(86:0.0010895240616155487,90:0.0010896578488975917):0.00000100000050002909):0.00000100000050002909,(87:0.0010895158102556407,(91:0.0044011239820133455,92:0.00000100000050002909):0.0032940757299874056):0.00000100000050002909):0.00000100000050002909):0.0010888149988462568):0.00000100000050002909):0.00000100000050002909,(((84:0.001087634029391784,83:0.002182315336939077):0.00000100000050002909,(93:0.0010888166232883407,80:0.0021840175266686643):0.00000100000050002909):0.00000100000050002909,81:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,(94:0.0010878730966995705,85:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909):0.0010870091399685332,95:0.00000100000050002909):0.19251949591621484,((((((57:0.00000100000050002909,((((58:0.00000100000050002909,60:0.00000100000050002909):0.00000100000050002909,55:0.00000100000050002909):0.00000100000050002909,(54:0.00000100000050002909,59:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,56:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,61:0.00000100000050002909):0.00000100000050002909,((68:0.001087389872360437,(67:0.00000100000050002909,66:0.00000100000050002909):0.00000100000050002909):0.0022064240796350262,69:0.0021890873752771576):0.00000100000050002909):0.0010904718780685519,(65:0.00000100000050002909,(64:0.001106052568870468,(63:0.00000100000050002909,62:0.00000100000050002909):0.00000100000050002909):0.001091062325444116):0.00000100000050002909):0.07157618133013417,70:0.06320208666803334):0.03779927446319296,((74:0.0058810732294555055,(73:0.0010499737017333178,(72:0.00000100000050002909,71:0.00000100000050002909):0.00000100000050002909):0.002432834483117897):0.0655679766746347,(75:0.002080789777348957,76:0.004716920610099672):0.08243299101090762):0.08249864339903143):0.015912310183216163):0.031057108799218306):0.02449994035823215,(97:0.001545572186638816,(98:0.0033686471125964233,96:0.003378479415400485):0.0018530423695874631):0.14884138076435646):0.069367897333163,99:0.069367897333163);
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1654720781685;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3276121491897065861;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 48 50 51 52 54 57 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 102 103 104 105 106 107 108 109 110 111 99 100;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8622791311364884605;
+			mqVersion 370;
+			checksumv 0 3 1359644991 null  getNumChars 4 numChars 4 getNumTaxa 101 numTaxa 101   short false   bits 67108863   states 67108863   sumSquaresStatesOnly 3.433688534167732E15 sumSquares 3.433688534167732E15 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1585 449;
+			setLocation 0 298;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #3276121491897065861  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0181404305121;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 999.1654640549621.2522016943820370749;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1485 377;
+					setLocation 0 298;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.ladderize;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle on;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(((((((((((((30:0.00000100000050002909,28:0.00000100000050002909):0.00000100000050002909,29:0.00000100000050002909):0.00000100000050002909,(32:0.00000100000050002909,31:0.00000100000050002909):0.00000100000050002909):0.001795425613077185,(34:0.004532605456510385,33:0.004370595044192345):0.00000100000050002909):0.0017975092600993258,(((37:0.0021778548069032993,35:0.00000100000050002909):0.00000100000050002909,36:0.00000100000050002909):0.00000100000050002909,38:0.00000100000050002909):0.00000100000050002909):0.0026990260658260505,39:0.00000100000050002909):0.13103773212274095,((((17:0.00000100000050002909,16:0.00000100000050002909):0.00000100000050002909,18:0.00000100000050002909):0.0013681407530817518,(20:0.00000100000050002909,19:0.00000100000050002909):0.0007354123314521669):0.032984141425375896,(22:0.00000100000050002909,21:0.00000100000050002909):0.04590404239523):0.12974331473446965):0.03805434860981919,((41:0.00000100000050002909,40:0.0010921948431028231):0.029340770883519388,42:0.03912786622597022):0.058097659119637955):0.002479962229582104,(((((((101:0.000905942068351015,5:0.0009475747240763669):0.007057519285769897,6:0.003959461455404749):0.019087617363139617,(4:0.00000100000050002909,3:0.0011156302265219612):0.02872316757517052):0.006847344574037411,(2:0.001120875999502912,1:0.00000100000050002909):0.0489615293878665):0.059114889133114724,(((8:0.00000100000050002909,7:0.0011147585818851776):0.00000100000050002909,9:0.002230423363376632):0.06461955043885476,(100:0.04503652968689308,10:0.046218514409565335):0.013178106619504033):0.014875118704015117):0.045539730665627734,((((12:0.00000100000050002909,11:0.00000100000050002909):0.004502619484407631,13:0.012098060300883003):0.003296141038838347,14:0.0011634842240858321):0.001171152429885615,15:0.0010906480068403003):0.07860086400896484):0.026618226210415263,(((26:0.0011561297782425773,25:0.001108470903967968):0.005158520715851081,(24:0.00000100000050002909,23:0.00000100000050002909):0.01681307730641538):0.03655931771758929,27:0.06606501995099436):0.04289331323729724):0.00910465201382835):0.02240463024844225,(((((44:0.00000100000050002909,43:0.00000100000050002909):0.0023797235649920126,45:0.005887165267864318):0.03246625152713581,(47:0.00000100000050002909,46:0.00000100000050002909):0.06921922411750146):0.04302536442394689,(49:0.00000100000050002909,48:0.001104320705368642):0.06820400532496466):0.04645384753498975,(((51:0.00000100000050002909,50:0.00000100000050002909):0.00000100000050002909,52:0.005664140828487139):0.0014311388654752511,53:0.00000100000050002909):0.07123821603636882):0.024543200163019457):0.02738161953113644,(((((((((((60:0.00000100000050002909,58:0.00000100000050002909):0.00000100000050002909,55:0.00000100000050002909):0.00000100000050002909,(59:0.00000100000050002909,54:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,56:0.00000100000050002909):0.00000100000050002909,57:0.00000100000050002909):0.00000100000050002909,61:0.00000100000050002909):0.00000100000050002909,(((67:0.00000100000050002909,66:0.00000100000050002909):0.00000100000050002909,68:0.001087389872360437):0.0022064240796350262,69:0.0021890873752771576):0.00000100000050002909):0.0010904718780685519,(((63:0.00000100000050002909,62:0.00000100000050002909):0.00000100000050002909,64:0.001106052568870468):0.001091062325444116,65:0.00000100000050002909):0.00000100000050002909):0.07157618133013417,70:0.06320208666803334):0.03779927446319296,((((72:0.00000100000050002909,71:0.00000100000050002909):0.00000100000050002909,73:0.0010499737017333178):0.002432834483117897,74:0.0058810732294555055):0.0655679766746347,(76:0.004716920610099672,75:0.002080789777348957):0.08243299101090762):0.08249864339903143):0.015912310183216163,((((((((((92:0.00000100000050002909,91:0.0044011239820133455):0.0032940757299874056,87:0.0010895158102556407):0.00000100000050002909,((90:0.0010896578488975917,86:0.0010895240616155487):0.00000100000050002909,88:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,89:0.0010952747211602249):0.0010888149988462568,79:0.0021973540785864437):0.00000100000050002909,(78:0.0021813324565709744,77:0.0010878753890238549):0.00000100000050002909):0.00000100000050002909,(((84:0.001087634029391784,83:0.002182315336939077):0.00000100000050002909,(93:0.0010888166232883407,80:0.0021840175266686643):0.00000100000050002909):0.00000100000050002909,81:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,(94:0.0010878730966995705,85:0.00000100000050002909):0.00000100000050002909):0.00000100000050002909,82:0.001088822116741827):0.0010870091399685332,95:0.00000100000050002909):0.19251949591621484):0.031057108799218306):0.02449994035823215,((98:0.0033686471125964233,96:0.003378479415400485):0.0018530423695874631,97:0.001545572186638816):0.14884138076435646):0.069367897333163,99:0.069367897333163);';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #8622791311364884605;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 4;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 20;
+					setInitialOffsetY 4;
+					setLegendWidth 142;
+					setLegendHeight 126;
+					resume ;
+					modifyColors  1 0  31 255 93 1 1  235 45 19;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8622791311364884605 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 317;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1485 377;
+					setLocation 0 298;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1485 377;
+						setLocation 0 298;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
