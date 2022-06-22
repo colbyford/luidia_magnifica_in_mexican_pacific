@@ -22,10 +22,12 @@ asr <- ancestralStates$ancestral_likelihoods %>%
   mutate(max_col_first = max.col(., ties.method = "first"),
          max_col_last =  max.col(., ties.method = "last"),
          ambig = ifelse(max_col_first == max_col_last, FALSE, TRUE),
-         taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]) %>% 
+         # taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]
+         taxa = rev(treedata$tip.label[1:(length(treedata$tip.label)-1)])
+         ) %>% 
   select(!c(max_col_first, max_col_last))
 
-colnames(asr) <- c(unique(metadata[[selected_meta]]), "ambig", "taxa")
+colnames(asr) <- c(sort(unique(metadata[[selected_meta]])), "ambig", "taxa")
 
 
 # non_ambig_taxa <- asr %>% filter(!ambig) %>% select(taxa) %>% .[["taxa"]]
@@ -52,8 +54,9 @@ non_ambig_graph <- makeTransNet(non_ambig_treedata,
 # graph
 
 
-saveRDS(full_graph, "Galvan_16S_54taxa/graph.rds")
-full_graph <- readRDS("Galvan_16S_54taxa/graph.rds")
+# readr::write_csv(asr, "16S_asr_max_parsimony.csv")
+# saveRDS(full_graph, "Galvan_16S_54taxa/graph.rds")
+# full_graph <- readRDS("Galvan_16S_54taxa/graph.rds")
 
 
 
@@ -138,10 +141,12 @@ asr <- ancestralStates$ancestral_likelihoods %>%
   mutate(max_col_first = max.col(., ties.method = "first"),
          max_col_last =  max.col(., ties.method = "last"),
          ambig = ifelse(max_col_first == max_col_last, FALSE, TRUE),
-         taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]) %>% 
+         # taxa = treedata$tip.label[1:(length(treedata$tip.label)-1)]
+         taxa = rev(treedata$tip.label[1:(length(treedata$tip.label)-1)])
+         ) %>% 
   select(!c(max_col_first, max_col_last))
 
-colnames(asr) <- c(unique(metadata[[selected_meta]]), "ambig", "taxa")
+colnames(asr) <- c(sort(unique(metadata[[selected_meta]])), "ambig", "taxa")
 
 
 # non_ambig_taxa <- asr %>% filter(!ambig) %>% select(taxa) %>% .[["taxa"]]
@@ -167,8 +172,9 @@ non_ambig_graph <- makeTransNet(non_ambig_treedata,
 
 # graph
 
-saveRDS(full_graph, "Galvan_COI_101taxa/graph.rds")
-full_graph <- readRDS("Galvan_COI_101taxa/graph.rds")
+# readr::write_csv(asr, "COI_asr_max_parsimony.csv")
+# saveRDS(full_graph, "Galvan_COI_101taxa/graph.rds")
+# full_graph <- readRDS("Galvan_COI_101taxa/graph.rds")
 
 ## Determine Ambiguous Edges
 non_ambig_df <- non_ambig_graph$x$edges %>% 
