@@ -41,14 +41,14 @@ non_ambig_treedata <- treedata %>% ape::drop.tip(ambig_taxa)
 full_graph <- makeTransNet(treedata,
                            metadata,
                            columnSelection = selected_meta,
-                           centralityMetric = 6,
+                           centralityMetric = 3,
                            treeType = "parsimonious")
 
 
 non_ambig_graph <- makeTransNet(non_ambig_treedata,
                                 metadata,
                                 columnSelection = selected_meta,
-                                centralityMetric = 6,
+                                centralityMetric = 3,
                                 treeType = "parsimonious")
 
 # graph
@@ -160,14 +160,14 @@ non_ambig_treedata <- treedata %>% ape::drop.tip(ambig_taxa)
 full_graph <- makeTransNet(treedata,
                            metadata,
                            columnSelection = selected_meta,
-                           centralityMetric = 6,
+                           centralityMetric = 3,
                            treeType = "parsimonious")
 
 
 non_ambig_graph <- makeTransNet(non_ambig_treedata,
                                 metadata,
                                 columnSelection = selected_meta,
-                                centralityMetric = 6,
+                                centralityMetric = 3,
                                 treeType = "parsimonious")
 
 # graph
