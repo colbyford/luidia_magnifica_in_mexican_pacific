@@ -70,29 +70,57 @@ non_ambig_df <- non_ambig_graph$x$edges %>%
 full_df <- full_graph$x$edges %>% 
   inner_join(full_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
   inner_join(full_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
-  mutate(transmission = paste0(label,">", label_to))
+  mutate(transmission = paste0(label,">", label_to)) %>% 
+  ## Manual Edge Selection/Ambiguity
+  filter(!transmission %in% c("Almirante Bay>Bering Sea",
+                              "Almirante Bay>North Pacific Ocean",
+                              "Almirante Bay>Persian Gulf",
+                              "Gulf of Thailand>?")) %>% 
+  mutate(ambig = ifelse(label_to == "Club de Yates", TRUE, FALSE))
+  
 
-ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
-
-
-full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
-
-
-## Recolor Nodes and Edges
-color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
+colors_16s <- readr::read_csv("Galvan_16S_54taxa/Galvan_16S_colors.csv")
 
 nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
-         color = color_palette,
-         font.size = 20)
+         # color = color_palette
+         font.size = 20) %>% 
+  filter(!label %in% c("?",
+                       "Bering Sea",
+                       "Persian Gulf",
+                       "North Pacific Ocean")) %>% 
+  inner_join(colors_16s, by = c("label" = "Body_of_Water_formatted"))
+  
+edges <- full_df %>% 
+    mutate(arrows = "to",
+           smooth = TRUE,
+           dashes = full_df$ambig,
+           color = ifelse(to == 5, "red", "grey"),
+           width = value) %>% 
+    select(from, to, arrows, smooth, dashes, color, width)
 
-edges <- full_graph$x$edges %>%
-  mutate(arrows = "to",
-         smooth = TRUE,
-         dashes = full_df$ambig,
-         color = ifelse(to == 5, "red", "grey"),
-         width = value,
-         value = NULL)
+# ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
+# 
+# 
+# full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
+
+
+## Recolor Nodes and Edges
+# color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
+# 
+# nodes <- full_graph$x$nodes %>%
+#   mutate(shape = "dot",
+#          color = color_palette,
+#          font.size = 20)
+# 
+# edges <- full_graph$x$edges %>%
+#   mutate(arrows = "to",
+#          smooth = TRUE,
+#          # dashes = full_df$ambig,
+#          dashes = ifelse(to == 5, TRUE, FALSE),
+#          color = ifelse(to == 5, "red", "grey"),
+#          width = value,
+#          value = NULL)
 
 ## Generate the custom network using `visNetwork`
 visNetwork(nodes, edges) %>%
@@ -124,7 +152,7 @@ visNetwork(nodes, edges) %>%
 
 
 ####################################
-### Second Network
+### Galvan COI Tree - 101 Taxa
 ## Read in tree, metadata, and geodata
 treedata <- ape::read.tree("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.tre")
 metadata <- readr::read_csv("Galvan_COI_101taxa/RAxML_bestTree.COI_nataly_brenda_JANESSA.DEDUP.trim.out_101.fix.csv", col_names = TRUE)
@@ -186,29 +214,54 @@ non_ambig_df <- non_ambig_graph$x$edges %>%
 full_df <- full_graph$x$edges %>% 
   inner_join(full_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
   inner_join(full_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
-  mutate(transmission = paste0(label,">", label_to))
-
-ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
-
-
-full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
-
-
-## Recolor Nodes and Edges
-color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
+  mutate(transmission = paste0(label,">", label_to)) %>% 
+  ## Manual Edge Selection/Ambiguity
+  filter(!transmission %in% c("Coral Sea>Queen Charlotte Islands",
+                              "Gulf of Thailand>?")) %>% 
+    mutate(ambig = ifelse(label_to == "Club de Yates", TRUE, FALSE))
+  
+# ambigs <- setdiff(full_df$transmission, non_ambig_df$transmission)
+# 
+# 
+# full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
+  
+colors_coi <- readr::read_csv("Galvan_COI_101taxa/Galvan_COI_colors.csv")
 
 nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
-         color = color_palette,
-         font.size = 20)
+         # color = color_palette
+         font.size = 20) %>% 
+  filter(!label %in% c("?",
+                       "Queen Charlotte Islands")) %>% 
+  inner_join(colors_coi, by = c("label" = "Body_of_Water_formatted"))
 
-edges <- full_graph$x$edges %>%
+edges <- full_df %>% 
   mutate(arrows = "to",
          smooth = TRUE,
          dashes = full_df$ambig,
          color = ifelse(to == 6, "red", "grey"),
-         width = value,
-         value = NULL)
+         width = value) %>% 
+  select(from, to, arrows, smooth, dashes, color, width)
+
+
+
+
+
+## Recolor Nodes and Edges
+# color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
+# 
+# nodes <- full_graph$x$nodes %>%
+#   mutate(shape = "dot",
+#          color = color_palette,
+#          font.size = 20)
+# 
+# edges <- full_graph$x$edges %>%
+#   mutate(arrows = "to",
+#          smooth = TRUE,
+#          dashes = full_df$ambig,
+#          color = ifelse(to == 6, "red", "grey"),
+#          width = value,
+#          value = NULL)
 
 ## Generate the custom network using `visNetwork`
 visNetwork(nodes, edges) %>%
