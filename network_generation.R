@@ -244,9 +244,6 @@ edges <- full_df %>%
   select(from, to, arrows, smooth, dashes, color, width)
 
 
-
-
-
 ## Recolor Nodes and Edges
 # color_palette <- distinctColorPalette(nrow(full_graph$x$nodes))
 # 
