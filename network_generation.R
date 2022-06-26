@@ -80,7 +80,7 @@ full_df <- full_graph$x$edges %>%
   
 
 # colors_16s <- readr::read_csv("Galvan_16S_54taxa/Galvan_16S_colors.csv")
-colors_greys <- c("#FFFFFF", grDevices::gray.colors(100))
+colors_greys <- c("#FFFFFF", rev(grDevices::gray.colors(100)))
 
 nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
@@ -233,7 +233,7 @@ full_df <- full_graph$x$edges %>%
 # full_df$ambig <- ifelse(full_df$transmission %in% ambigs, TRUE, FALSE)
   
 colors_coi <- readr::read_csv("Galvan_COI_101taxa/Galvan_COI_colors.csv")
-colors_greys <- c("#FFFFFF", grDevices::gray.colors(100))
+colors_greys <- c("#FFFFFF", rev(grDevices::gray.colors(100)))
 
 nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
