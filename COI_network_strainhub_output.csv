@@ -1,0 +1,24 @@
+id,label,value,group,shape,font.size,value_percentiles,color
+2,adjacent water of Hanrim,0,0,dot,20,1,#FFFFFF
+3,Almirante Bay,29,29,dot,20,29,#CACACA
+4,Balayan Bay,0,0,dot,20,1,#FFFFFF
+5,Bohai Sea,46,46,dot,20,46,#B5B5B5
+6,Club de Yates,0,0,dot,20,1,#FFFFFF
+7,Coral Sea,43.5,43.5,dot,20,43,#B9B9B9
+8,East China Sea,102,102,dot,20,101,#4D4D4D
+9,Gulf of Mexico,95.5,95.5,dot,20,94,#626262
+10,Gulf of Thailand,24,24,dot,20,24,#CFCFCF
+11,Howe Sound/Sunshine Coast,0,0,dot,20,1,#FFFFFF
+12,Korea Straight,0,0,dot,20,1,#FFFFFF
+13,Mozambique Channel,0,0,dot,20,1,#FFFFFF
+14,North Sea,0,0,dot,20,1,#FFFFFF
+16,Queen Charlotte Sound,8,8,dot,20,8,#E0E0E0
+17,San Pedro Shelf,0,0,dot,20,1,#FFFFFF
+18,Skagerrak Straight,0,0,dot,20,1,#FFFFFF
+19,South Atlantic Ocean,0,0,dot,20,1,#FFFFFF
+20,South China Sea,7.5,7.5,dot,20,8,#E0E0E0
+21,South Pacific Ocean,9,9,dot,20,9,#DFDFDF
+22,South San Diego Shelf,0,0,dot,20,1,#FFFFFF
+23,Tonkin Gulf,0,0,dot,20,1,#FFFFFF
+24,Verde Island Passage,0,0,dot,20,1,#FFFFFF
+25,Yellow Sea,24.5,24.5,dot,20,25,#CECECE
