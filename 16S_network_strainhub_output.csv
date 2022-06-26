@@ -1,0 +1,17 @@
+id,label,value,group,shape,font.size,value_percentiles,color
+2,Almirante Bay,39,39,dot,20,101,#4D4D4D
+3,Balayan Bay,0,0,dot,20,1,#FFFFFF
+5,Club de Yates,0,0,dot,20,1,#FFFFFF
+6,Coral Sea,0,0,dot,20,1,#FFFFFF
+7,East China Sea,5,5,dot,20,13,#DBDBDB
+8,Gulf of Mexico,36,36,dot,20,93,#656565
+9,Gulf of Thailand,20,20,dot,20,52,#ADADAD
+10,Hauraki Gulf,0,0,dot,20,1,#FFFFFF
+11,Howe Sound/Sunshine Coast,0,0,dot,20,1,#FFFFFF
+12,Monterey Bay,0,0,dot,20,1,#FFFFFF
+13,Mozambique Channel,0,0,dot,20,1,#FFFFFF
+15,Panama Bay,0,0,dot,20,1,#FFFFFF
+17,South Atlantic Ocean,0,0,dot,20,1,#FFFFFF
+18,South Pacific Ocean,18,18,dot,20,47,#B4B4B4
+19,Southeast Pacific Ocean,0,0,dot,20,1,#FFFFFF
+20,Verde Island Passage,0,0,dot,20,1,#FFFFFF
