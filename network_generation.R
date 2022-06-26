@@ -4,6 +4,7 @@
 library(strainhub)
 library(visNetwork)
 library(dplyr)
+library(readr)
 library(randomcoloR)
 
 ### Galvan 16 - 54 Taxa
@@ -130,8 +131,12 @@ edges <- full_df %>%
 #          value = NULL)
 
 ## Generate the custom network using `visNetwork`
-visNetwork(nodes, edges) %>%
+output_graph <- visNetwork(nodes, edges) %>%
   visOptions(nodesIdSelection = list(enabled = TRUE))
+
+output_graph
+
+write_csv(output_graph$x$nodes, "16S_network_strainhub_output.csv")
 
 
 # ## Recolor Nodes and Edges
@@ -275,8 +280,12 @@ edges <- full_df %>%
 #          value = NULL)
 
 ## Generate the custom network using `visNetwork`
-visNetwork(nodes, edges) %>%
+output_graph <- visNetwork(nodes, edges) %>%
   visOptions(nodesIdSelection = list(enabled = TRUE))
+
+output_graph
+
+write_csv(output_graph$x$nodes, "COI_network_strainhub_output.csv")
 
 
 ## Recolor Nodes and Edges
