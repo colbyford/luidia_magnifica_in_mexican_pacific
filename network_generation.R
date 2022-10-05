@@ -7,13 +7,13 @@ library(dplyr)
 library(readr)
 library(randomcoloR)
 
+
 ### Galvan 16 - 54 Taxa
 ## Read in tree, metadata, and geodata
 treedata <- ape::read.tree("Galvan_16S_54taxa/RAxML_bestTree.LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa.tre")
 metadata <- readr::read_csv("Galvan_16S_54taxa/LMcat_karen_galvan_RC_v7_Dipsacaster_outDEDUP.Janesssa16s.csv", col_names = TRUE)
 
 selected_meta = "Body_of_Water_formatted"
-
 
 ## Make the Transmission Network
 full_graph <- makeTransNet(treedata,
@@ -69,9 +69,6 @@ output_graph <- visNetwork(nodes, edges) %>%
 output_graph
 
 write_csv(output_graph$x$nodes, "16S_network_strainhub_output.csv")
-
-
-
 
 
 
