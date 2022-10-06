@@ -3,5 +3,5 @@
 <h3 align="right"> Cristian M. Galván-Villa, Francisco A. Solís-Marín, Karen Lopez, Janessa Cobb, <br>Leopoldo Díaz-Pérez, Carlos R. Rezende-Ventura, Colby T. Ford, Daniel A. Janies</h3>
 
 
-<p align="right">Made with StrainHub.</p>
+<p align="right">Made with <a href="https://www.github.com/colbyford/strainhub">StrainHub</a>.</p>
 
