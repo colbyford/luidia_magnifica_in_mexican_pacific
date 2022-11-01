@@ -5,3 +5,6 @@
 
 <p align="right">Made with <a href="https://www.github.com/colbyford/strainhub">StrainHub</a>.</p>
 
+## COI Network
+
+![](https://github.com/colbyford/luidia_magnifica_in_mexican_pacific/blob/main/betweenness_fix_grey_COI/COI-fix%20%20grey.png)
