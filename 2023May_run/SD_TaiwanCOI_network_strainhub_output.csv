@@ -1,0 +1,11 @@
+id,label,value,group,shape,font.size,value_percentiles,color
+1,EIWP,0,0,dot,20,1,#FFFFFF
+2,SANZ,0,0,dot,20,1,#FFFFFF
+3,NWP,1,1,dot,20,51,#AFAFAF
+4,WIO,0,0,dot,20,1,#FFFFFF
+5,NEP,0,0,dot,20,1,#FFFFFF
+6,NWA,0,0,dot,20,1,#FFFFFF
+7,EP,0,0,dot,20,1,#FFFFFF
+8,WA,2,2,dot,20,101,#4D4D4D
+9,NEA,0,0,dot,20,1,#FFFFFF
+10,SAFR,0,0,dot,20,1,#FFFFFF
