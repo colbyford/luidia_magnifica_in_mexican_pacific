@@ -137,7 +137,7 @@ write_csv(output_graph$x$nodes, "betweenness_fix_grey_COI/COI_network_strainhub_
 
 
 ############################
-### May 2023 Data - 25 Taxa
+### May 2023 Taiwan Data - 25 Taxa
 ## Read in tree, metadata, and geodata
 treedata <- ape::read.tree("2023May_run/w-baRnfBpf1L0Yw4jdGNxQ_newick.txt")
 metadata <- readr::read_csv("2023May_run/SD_TaiwanCOIv3_DJ_body_of_waterFIX2jpl2.csv", col_names = TRUE)
@@ -148,7 +148,7 @@ selected_meta = "Body_of_Water"
 full_graph <- makeTransNet(treedata,
                            metadata,
                            columnSelection = selected_meta,
-                           centralityMetric = 3,
+                           centralityMetric = 6,
                            treeType = "parsimonious")
 
 ## Convert Graph info to DataFrame
