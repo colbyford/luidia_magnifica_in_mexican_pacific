@@ -245,3 +245,21 @@ output_graph <- visNetwork(nodes, edges) %>%
 output_graph
 
 write_csv(output_graph$x$nodes, "2023May_run/SD_TaiwanCOI_network_strainhub_output.csv")
+
+full_df_renamed <- full_df %>% 
+  rename(number_of_transmissions = value,
+         from_node_sourcehubratio = value_from,
+         to_node_sourcehubratio = value_to,
+         from_node_id = from,
+         to_node_id = to,
+         from_node_label = label,
+         to_node_label = label_to) %>% 
+  select("transmission",
+         "number_of_transmissions",
+         "from_node_label",
+         "from_node_id",
+         "from_node_sourcehubratio",
+         "to_node_label",
+         "to_node_id",
+         "to_node_sourcehubratio")
+write_csv(full_df_renamed, "2023May_run/SD_TaiwanCOI_network_strainhub_output_networkvalues.csv")
