@@ -1,0 +1,11 @@
+transmission,number_of_transmissions,from_node_label,from_node_id,from_node_sourcehubratio,to_node_label,to_node_id,to_node_sourcehubratio
+EIWP>SANZ,1,EIWP,1,1,SANZ,2,0
+EIWP>NWP,3,EIWP,1,1,NWP,3,0.5
+EIWP>WIO,1,EIWP,1,1,WIO,4,0
+EIWP>NEP,1,EIWP,1,1,NEP,5,0
+EIWP>EP,2,EIWP,1,1,EP,7,0.5
+EIWP>WA,1,EIWP,1,1,WA,8,0.3333333333333333
+EIWP>NEA,1,EIWP,1,1,NEA,9,0
+NWP>NWA,1,NWP,3,0.5,NWA,6,0
+EP>WA,3,EP,7,0.5,WA,8,0.3333333333333333
+WA>SAFR,1,WA,8,0.3333333333333333,SAFR,10,0
