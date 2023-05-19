@@ -228,7 +228,7 @@ edges <- full_df %>%
          # dashes = full_df$ambig,
          color = "grey",
          # color = ifelse(to == 5, "red", "grey"),
-         width = value) %>% 
+         width = value^2) %>% ## Exaggerate line widths to see diferences
   select(from,
          to,
          arrows,
