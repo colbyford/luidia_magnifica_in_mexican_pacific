@@ -140,9 +140,10 @@ write_csv(output_graph$x$nodes, "betweenness_fix_grey_COI/COI_network_strainhub_
 ### May 2023 Taiwan Data - 25 Taxa
 ## Read in tree, metadata, and geodata
 treedata <- ape::read.tree("2023May_run/w-baRnfBpf1L0Yw4jdGNxQ_newick.txt")
-metadata <- readr::read_csv("2023May_run/SD_TaiwanCOIv3_DJ_body_of_waterFIX2jpl2.csv", col_names = TRUE)
+metadata <- readr::read_csv("2023May_run/SD_TaiwanCOIv3_DJ_body_of_waterFIX2jpl2.csv", col_names = TRUE) %>% 
+  mutate("Body_of_Water_letter" = paste0(Body_of_Water, " (", acro, ")"))
 
-selected_meta = "Body_of_Water"
+selected_meta = "Body_of_Water_letter"
 
 ## Make the Transmission Network
 full_graph <- makeTransNet(treedata,
@@ -155,33 +156,33 @@ full_graph <- makeTransNet(treedata,
 full_df <- full_graph$x$edges %>% 
   inner_join(full_graph$x$nodes, by=c('from'='id'), suffix = c("", "_from")) %>% 
   inner_join(full_graph$x$nodes, by=c('to'='id'),  suffix = c("", "_to")) %>% 
-  mutate(label = case_when(
-    label == "a" ~ "EIWP",
-    label == "b" ~ "SANZ",
-    label == "c" ~ "NWP",
-    label == "d" ~ "WIO",
-    label == "e" ~ "NEP",
-    label == "f" ~ "NWA",
-    label == "g" ~ "EP",
-    label == "h" ~ "WA",
-    label == "i" ~ "NEA",
-    label == "k" ~ "SAFR",
-    .default = as.character(label)
-  ),
-  label_to = case_when(
-    label_to == "a" ~ "EIWP",
-    label_to == "b" ~ "SANZ",
-    label_to == "c" ~ "NWP",
-    label_to == "d" ~ "WIO",
-    label_to == "e" ~ "NEP",
-    label_to == "f" ~ "NWA",
-    label_to == "g" ~ "EP",
-    label_to == "h" ~ "WA",
-    label_to == "i" ~ "NEA",
-    label_to == "k" ~ "SAFR",
-    .default = as.character(label_to)
-  ),
-  ) %>% 
+  # mutate(label = case_when(
+  #   label == "a" ~ "EIWP",
+  #   label == "b" ~ "SANZ",
+  #   label == "c" ~ "NWP",
+  #   label == "d" ~ "WIO",
+  #   label == "e" ~ "NEP",
+  #   label == "f" ~ "NWA",
+  #   label == "g" ~ "EP",
+  #   label == "h" ~ "WA",
+  #   label == "i" ~ "NEA",
+  #   label == "k" ~ "SAFR",
+  #   .default = as.character(label)
+  # ),
+  # label_to = case_when(
+  #   label_to == "a" ~ "EIWP",
+  #   label_to == "b" ~ "SANZ",
+  #   label_to == "c" ~ "NWP",
+  #   label_to == "d" ~ "WIO",
+  #   label_to == "e" ~ "NEP",
+  #   label_to == "f" ~ "NWA",
+  #   label_to == "g" ~ "EP",
+  #   label_to == "h" ~ "WA",
+  #   label_to == "i" ~ "NEA",
+  #   label_to == "k" ~ "SAFR",
+  #   .default = as.character(label_to)
+  # ),
+  # ) %>% 
   mutate(transmission = paste0(label,">", label_to))# %>% 
   ## Manual Edge Selection/Ambiguity
   # filter(!transmission %in% c("Almirante Bay>Bering Sea",
@@ -197,19 +198,31 @@ colors_greys <- c("#FFFFFF", rev(grDevices::gray.colors(100)))
 nodes <- full_graph$x$nodes %>%
   mutate(shape = "dot",
          font.size = 20) %>% 
-  mutate(label = case_when(
-    label == "a" ~ "EIWP",
-    label == "b" ~ "SANZ",
-    label == "c" ~ "NWP",
-    label == "d" ~ "WIO",
-    label == "e" ~ "NEP",
-    label == "f" ~ "NWA",
-    label == "g" ~ "EP",
-    label == "h" ~ "WA",
-    label == "i" ~ "NEA",
-    label == "k" ~ "SAFR",
-    .default = as.character(label)
+  mutate(color = case_when(
+    label == "a (EIWP)" ~ "#bcdc90",
+    label == "b (SANZ)" ~ "#65a97a",
+    label == "c (NWP)" ~ "#65a97a",
+    label == "d (WIO)" ~ "#cd8f5f",
+    label == "e (NEP)" ~ "#7593bb",
+    label == "f (NWA)" ~ "#7593bb",
+    label == "g (EP)" ~ "#c5d4e8",
+    label == "h (WA)" ~ "#c5d4e8",
+    label == "i (NEA)" ~ "#7a797a",
+    label == "k (SAFR)" ~ "#7a797a"
   )) %>% 
+  # mutate(label = case_when(
+  #   label == "a" ~ "EIWP",
+  #   label == "b" ~ "SANZ",
+  #   label == "c" ~ "NWP",
+  #   label == "d" ~ "WIO",
+  #   label == "e" ~ "NEP",
+  #   label == "f" ~ "NWA",
+  #   label == "g" ~ "EP",
+  #   label == "h" ~ "WA",
+  #   label == "i" ~ "NEA",
+  #   label == "k" ~ "SAFR",
+  #   .default = as.character(label)
+  # )) %>% 
   # filter(!label %in% c("?",
   #                      "Bering Sea",
   #                      "Persian Gulf",
@@ -217,9 +230,9 @@ nodes <- full_graph$x$nodes %>%
   mutate(value_percentiles = as.integer(value/max(value)*100)+1)
 # inner_join(colors_16s, by = c("label" = "Body_of_Water_formatted"))
 
-for (i in 1:nrow(nodes)){
-  nodes$color[i] <- colors_greys[nodes$value_percentiles[i]]
-}
+# for (i in 1:nrow(nodes)){
+#   nodes$color[i] <- colors_greys[nodes$value_percentiles[i]]
+# }
 
 
 edges <- full_df %>% 
@@ -228,7 +241,7 @@ edges <- full_df %>%
          # dashes = full_df$ambig,
          color = "grey",
          # color = ifelse(to == 5, "red", "grey"),
-         width = value^2) %>% ## Exaggerate line widths to see diferences
+         width = value^2) %>% ## Exaggerate line widths to see differences
   select(from,
          to,
          arrows,
