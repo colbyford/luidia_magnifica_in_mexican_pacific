@@ -1,6 +1,6 @@
 # Occurrence of the Indo-West Pacific starfish _Luidia magnifica_ (Echinodermata: Asteroidea) in the Mexican Pacific and a possible introduction to the Caribbean region
 
-<h3 align="right"> Cristian M. Galván-Villa, Francisco A. Solís-Marín, Karen Lopez, Janessa Cobb, <br>Leopoldo Díaz-Pérez, Carlos R. Rezende-Ventura, Colby T. Ford, Daniel A. Janies</h3>
+<h3 align="right"> Cristian M. Galván-Villa, Francisco A. Solís-Marín, Karen Lopez, Janessa Cobb, <br>Leopoldo Díaz-Pérez, Carlos R. Rezende-Ventura, Colby T. Ford, and Daniel A. Janies</h3>
 
 Paper: https://link.springer.com/article/10.1007/s12526-023-01397-2
 
