@@ -20,3 +20,34 @@ We present new shallow-water records of the magnificent starfish _Luidia magnifi
 
 
 <p align="right">Made with <a href="https://www.github.com/colbyford/strainhub">StrainHub</a>.</p>
+
+
+
+### Citation
+
+Galván-Villa, C.M., Solís-Marín, F.A., Lopez, K. *et al.* Occurrence of the Indo-West Pacific starfish *Luidia magnifica* (Echinodermata: Asteroidea) in the Mexican Pacific and a possible introduction to the Caribbean region. *Mar. Biodivers.* **54**, 1 (2024). https://doi.org/10.1007/s12526-023-01397-2
+
+```bibtex
+@Article{Galván-Villa2023,
+    author={Galv{\'a}n-Villa, Cristian M.
+    and Sol{\'i}s-Mar{\'i}n, Francisco A.
+    and Lopez, Karen
+    and Cobb, Janessa
+    and D{\'i}az-P{\'e}rez, Leopoldo
+    and Rezende-Ventura, Carlos R.
+    and Slivak, Nataly
+    and Ford, Colby T.
+    and Janies, Daniel A.},
+    title={Occurrence of the Indo-West Pacific starfish \textit{Luidia magnifica} (Echinodermata: Asteroidea) in the Mexican Pacific and a possible introduction to the Caribbean region},
+    journal={Marine Biodiversity},
+    year={2023},
+    month={Dec},
+    day={21},
+    volume={54},
+    number={1},
+    pages={1},
+    issn={1867-1624},
+    doi={10.1007/s12526-023-01397-2},
+    url={https://doi.org/10.1007/s12526-023-01397-2}
+}
+```
